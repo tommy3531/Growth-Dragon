@@ -45,10 +45,10 @@ const NavigationAuth = () => (
 );
 
 const NavigationNonAuth = () => (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item">
-            <FontAwesomeIcon icon={faDragon} />
+                <FontAwesomeIcon icon={faDragon} />
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -69,16 +69,12 @@ const NavigationNonAuth = () => (
             </div>
 
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-light">
-                            <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
-                        </a>
-                        <a class="button is-light">
-                            <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-                        </a>
-                    </div>
-                </div>
+                <a class="navbar-item">
+                    <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
+                </a>
+                <a class="navbar-item">
+                    <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+                </a>
             </div>
         </div>
     </nav>
