@@ -1,11 +1,12 @@
 import React from "react";
 
 const Landing = () => (
-  <section className="hero is-primary is-fullheight">
-    <div className="hero-body">
-      <p>Landing Page</p>
+    <div className="container">
+        <div className="block">
+            <h1>Hello</h1>
+        </div>
     </div>
-  </section>
+
 );
 
 export default Landing;
